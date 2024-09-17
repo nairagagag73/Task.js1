@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Website Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        
+        <header>
+            <!--Navbar start-->
+            <a href="#"><img src="img1.jpg" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <!--Navbar end-->
+        </header>
+        <!-- start section1-->
+        <div class="content">
+            <div class="non">
+                <h2> It's not just coffee<br>It's<span>Starbucks</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem hic, 
+                usandae corporis dolore, natus, 
+                provident fugit quod exercitationem <br>atque molestiae
+                earum! Ullam dicta temporibus laborum iste quis totam, eius amet.</p>
+                <a href="#">Learn More</a>
+            </div>
+        <div class="photo2">
+            <img src="img2.jpg" class="starbucks2">
+        </div>
+        </div>
+        <!-- end section1-->
+        <ul class="gallary">
+            <li><img src="gallary1.jpg" onclick="imgSlider('img2.jpg')" ></li>
+            <li><img src="gallary2.jpg" onclick="imgSlider('img3.jpg')" ></li>
+            <li><img src="gallary3.jpg" onclick="imgSlider('img4.jpg')"></li>
+        </ul>
+         <!-- start icon-->
+        <ul class="icon">
+            <li><a href="#"><img src="icon11.jpg"></a></li>
+            <li><a href="#"><img src="icon22.jpg"></a></li>
+            <li><a href="#"><img src="icon33.jpg"></a></li>
+        </ul>
+         <!-- end icon-->
+    </section>
+         <!-- start js-->
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks2').src = anything;
+        }
+    </script>
+    <!-- end js-->
+</body>
+</html>
